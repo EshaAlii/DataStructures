@@ -1,0 +1,36 @@
+
+START FUNCTION: 
+bool getTimeFromUser(Time, String):
+
+    Initialize:
+    string hours
+    string minutes
+    string seconds
+    int C1
+    int C2
+    int length
+
+
+    getline(userinput)
+
+    C1 = string.find(":")
+    
+    C2 = string.find_last_of(":")
+
+    length = string.size()
+
+    hours = check.substr(0, C1)
+    minutes = check.substr(C1+1, length - C2 - 1)
+    seconds = check.substr(C2+1, length)
+
+    time.hours = atoi(hours.c_str())
+    time.minutes = atoi(minutes.c_str())
+    time.seconds = atoi(seconds.c_str())
+    
+    if time.hours is in range && time.minutes is in range && time.seconds is in range && C1 is found && C2 is found do:
+        return True
+    end if
+    
+    return False
+    
+END FUNCTION
