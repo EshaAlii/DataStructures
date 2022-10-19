@@ -1,0 +1,86 @@
+Input: array, size, choice
+Output: sorted array + increasing/decreasing
+
+Start Program
+
+void sortarr(size,arr[],choice){
+    
+    Initialize: "Max" & "iMax"
+
+    if choice is ascend(0) do:
+
+        for i = 1 to size do:
+            int saved = arr[i];
+            int j = i;
+
+            while j>0 AND arr[j-1] > saved do:
+                arr[j] = arr[j-1];
+                j = j-1;
+            end while
+
+            arr[j] = saved;
+        end for
+        
+        Tell user this is the array in ascending order.
+
+        for i = 0 to size do:
+            return arr
+        end for
+
+
+    else if choice is descend(1) do:
+
+        for i = 1 to size do:
+            int saved = arr[i];
+            int j = i;
+
+            while j>0 AND arr[j-1] < saved do:
+                arr[j] = arr[j-1];
+                j = j-1;
+            end while
+
+            arr[j] = saved;
+        end for
+        
+        Tell user this is the array in descending order.
+
+        for i = 0 to size do:
+            return arr
+        end for
+
+    end if
+
+}
+
+
+int main(){
+
+    Initizliaze: "choice", "size", and "*arr = new int[size]"
+
+    User enters "size"
+
+    if size is not zero do:
+       return Error;
+    else do:
+
+        Tell user to enter numbers into the array
+
+        for i = 0 to size do:
+            user enters arr[i]
+        end for;
+
+        Tell user to either ascend or descend the array
+        user enters "chocie"
+
+        sortarr(size, arr, choice);
+
+    end if
+
+
+    delete [] arr;
+
+    return 0;
+
+}
+
+End Program

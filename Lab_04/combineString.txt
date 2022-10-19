@@ -1,0 +1,54 @@
+Inputs: Number, Enter
+Outputs: combineStr(Number, Enter)
+
+Start Program:
+Intialize user input variable: "number"
+Intialize user input string variable: "enter"
+
+string combineStr(number, enter){
+
+    Initialize empty string variable: "stemp"
+
+    for i to number do:
+        stemp = stemp + enter;
+    end for
+
+    return stemp;
+}
+
+int main(){
+
+
+    User enters "enter" & "number";
+    
+    if number not 0 do:
+        return combineStr(number, enter)
+    else do:
+        End Program;
+    end if
+
+
+
+    while number not 0 do:
+
+        if number not zero do:
+
+            User enters "enter" & "number";
+
+            if number not 0 do:
+                return combineStr(number, enter)
+            else do:
+                End Program;
+            end if 
+
+        else do:
+            break;
+        end if
+
+    end while
+
+    return 0;
+    
+}
+
+End Program
