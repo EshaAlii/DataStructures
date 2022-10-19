@@ -1,0 +1,9 @@
+Online Sources:
+
+https://www.youtube.com/watch?v=wVEX3UsKEVA
+
+https://www.alphacodingskills.com/ds/notes/linked-list-delete-the-last-node.php#:~:text=Deleting%20the%20last%20node%20of,and%20delete%20the%20last%20node
+
+http://www.cplusplus.com/forum/beginner/179396/
+
+https://www.geeksforgeeks.org/write-a-function-to-delete-a-linked-list/
