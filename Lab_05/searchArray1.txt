@@ -1,0 +1,58 @@
+Whole Program:
+Inputs: key
+Ouptus: index of key (i)
+
+BEGIN FUNCTION:
+    inputs: string arr[], string key, int high, int low, int choice){
+
+    initialize within: 
+    int i
+    int mid = (high + low)/2
+
+    if array ascends (choice = 1) do:
+
+        if top_array >= bottom_array do:
+
+            if key == arr[mid] do:
+                i = mid
+            end if
+
+            if key < arr[mid] do:
+                high = mid -1
+                recursion
+            end if
+
+            if key > arr[mid] do:
+                low = mid + 1
+                recursion
+            end if
+        else do:
+            i does not exist
+        end if
+    end if
+
+    if array descends (choice = -1) do:
+
+        if top_array >= bottom_array do:
+
+            if key == arr[mid] do:
+                i = mid
+            end if
+
+            if key > arr[mid] do:
+                high = mid - 1
+                recursion
+            end if
+
+            if key < arr[mid] do:
+                low = mid + 1
+                recursion
+            end if
+        else do:
+            i does not exist
+        end if
+    end if
+
+    return i
+
+END FUNCTION

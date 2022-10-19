@@ -1,0 +1,61 @@
+Whole Program:
+Inputs: key
+Ouptus: index of key (i)
+
+BEGIN FUNCTION:
+    inputs: string arr[], string key, int high, int low, int choice){
+
+    initialize within: 
+    int i
+
+    if high < low do:
+        i = -1
+        return i
+    end if
+
+    if array ascends (choice = 1) do:
+
+        while high >= low do:
+
+            intialize: int mid = (high + low)/2; 
+
+            if key == arr[mid] do:
+                i = mid
+            end if
+
+            if key < arr[mid] do:
+                high = mid - 1;
+            end if
+
+            if key > arr[mid] do:
+                low = mid + 1;
+            end if
+
+        end while
+        
+    end if
+
+    if array descends (choice = -1) do:
+
+        while high >= low do:
+
+            intialize: int mid = (high + low)/2; 
+
+            if key == arr[mid] do:
+                i = mid
+            end if
+
+            if key > arr[mid] do:
+                high = mid - 1;
+            end if
+
+            if key < arr[mid] do:
+                low = mid + 1;
+            end if
+
+        end while
+
+    end if
+    
+    return i
+END FUNCTION
