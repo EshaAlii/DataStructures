@@ -1,0 +1,35 @@
+Input: User enters size of 2D-Array + numbers in array
+Output: The number of negative values if any entered
+
+Start Program
+Initialize array size variable: "size"
+Initialize 2-D array: "arr[size][size]"
+Initialize char variable: "alpha"
+Initialzie count variable: "count = 0"
+
+User enters array size
+
+if size > 10 OR size <= 0 OR size == alpha, do:
+    return ERROR
+else:
+    // User enters 2D array and counts negative numbers
+    for i <- 1 to size, do:
+        for j <- 1 to size, do:
+            enter arr[i][j];
+            
+            if arr[i][j] < 0, do:
+                count = count + 1;
+            end if 
+
+        end for
+    end for
+    
+
+    // Return count
+    if count > 0 do:
+        return count
+    else:
+        return "no negatives"
+    end if
+
+end if

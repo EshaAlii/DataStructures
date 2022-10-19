@@ -1,0 +1,51 @@
+Input: User inputs numbers into an array
+Output: 1. Array + see if it is increasing
+        2. Array + see if it is decreasing
+
+Start Program
+Initialize Array size variable: "size"
+Initialize Array: "arr[size]"
+Initialize char variable: "alpha"
+
+User enters size + store size
+
+if size = 0 OR alpha
+    return ERROR
+else:
+
+  // user enters numbers in array
+  for i <- 0, i < size, do:
+    enter arr[i]
+  end for
+    
+
+  // Then return the same array
+  for i <- 0 to size, do:
+    return arr[i]
+  end for
+
+    
+  // Then determine if array increases or decreases
+  for i <- 0 to size do:
+
+    if (arr[i] < arr[i-1]):
+      return NOT increasing
+    end if
+
+  end for
+
+
+  for i <- 0 to size, do:
+
+    if (arr[i] > arr[i+1]):
+      return NOT increasing
+    else:
+      return IS increasing
+    end if
+
+  end for
+
+
+end if
+    
+End Program

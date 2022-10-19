@@ -1,0 +1,18 @@
+Input: User inputs string into an array
+Output: Reverse of string
+
+Start Program
+Initialize array input as a string: "alpha"
+Initialize string Array and set it equal to alpha: "arr[] = alpha"
+
+
+User enters alpha
+
+// Then for loop return string reversed
+for i = 0 to alpha.size() do:
+    return alpha[alpha.size() - i - 1]
+end for
+
+End Program
+
+
